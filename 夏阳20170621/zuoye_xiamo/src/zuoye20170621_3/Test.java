@@ -3,30 +3,30 @@ package zuoye20170621_3;
 import java.util.Calendar;
 import java.util.Date;
 
-//²âÊÔÀà
+//æµ‹è¯•ç±»
 public class Test {
-
+	//æµ‹è¯•
 	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
+		// åˆ›å»ºå¯¹è±¡
 		DateUtil a = new DateUtil();
 		String st = "2017-06-22";
 		try {
-			// Êä³öÍ¨¹ı¶ÔÏóÒıÓÃÀïÃæµÄ·½·¨
+			// è¾“å‡ºé€šè¿‡å¯¹è±¡å¼•ç”¨é‡Œé¢çš„æ–¹æ³•
 			System.out.println(a.convertToDate(st));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ´´½¨Ò»¸öCalendarÀàĞÍµÄÊ±¼ä¶ÔÏó
+		// åˆ›å»ºä¸€ä¸ªCalendarç±»å‹çš„æ—¶é—´å¯¹è±¡
 		Calendar cd = Calendar.getInstance();
-		// ÉèÖÃÊ±¼ä
+		// è®¾ç½®æ—¶é—´
 		cd.set(2017, 05, 22);
-		// »ñµÃÈÕÆÚÀàĞÍ
+		// è·å¾—æ—¥æœŸç±»å‹
 		Date date = cd.getTime();
-		// ÅĞ¶ÏÕâÒ»ÄêÖĞµÄµÚ¶àÉÙÌì
+		// åˆ¤æ–­è¿™ä¸€å¹´ä¸­çš„ç¬¬å¤šå°‘å¤©
 		int year = cd.get(cd.DAY_OF_YEAR);
-		// ÅĞ¶ÏÕâÒ»ÔÂÖĞµÄµÚ¶àÉÙÌì
+		// åˆ¤æ–­è¿™ä¸€æœˆä¸­çš„ç¬¬å¤šå°‘å¤©
 		int month = cd.get(cd.DAY_OF_MONTH);
-		System.out.println(a.convertToDateString(date) + ",ÊÇÕâÒ»ÄêÖĞµÄµÚ" + year + "Ìì,ÊÇÕâÒ»¸öÔÂÖĞµÄµÚ" + month + "Ìì");
+		System.out.println(a.convertToDateString(date) + ",æ˜¯è¿™ä¸€å¹´ä¸­çš„ç¬¬" + year + "å¤©,æ˜¯è¿™ä¸€ä¸ªæœˆä¸­çš„ç¬¬" + month + "å¤©");
 	}
 
 }
